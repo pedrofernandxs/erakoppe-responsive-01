@@ -1,0 +1,126 @@
+@media (max-width: 375px) {
+  body {
+    padding: 0 1rem;
+  }
+
+
+  .sobre-container,
+  .produtos-container,
+  .container-parceiros,
+  .container-local,
+  footer.footer {
+    padding: 2rem 1rem;
+  }
+
+  .solido {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    overflow: hidden;
+  }
+
+  .solido-texts h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .solido-texts h4 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+.textos span {
+    padding: 1.2rem 0;
+    font-size: 12px;
+}
+
+.textos h2 {
+    font-size: 2.5rem;
+}
+
+.textos p{
+    padding: 1rem 0;
+}
+
+.blocos {
+    padding: 1rem 0;
+}
+
+.produtos-container h1 {
+    font-size: 2.5rem;
+}
+
+.produtos-container span {
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.produtos-imgs {
+    padding: 2rem 0;
+}
+
+.crescimento-text {
+    padding: 0;
+}
+.container-parceiros h1 {
+    font-size: 2.5rem;
+}
+
+.container-parceiros span {
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.logos img {
+    width: 130px;
+}
+
+.logos1 {
+    padding: 1rem 0;
+}
+
+.local img {
+    width: 120px;
+}
+
+.local {
+    padding: 1rem 0;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .produtos-imgs {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .blocos {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .local {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-section {
+    margin-left: 0;
+  }
+}

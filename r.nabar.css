@@ -1,0 +1,71 @@
+/* Até 1400px */
+@media (max-width: 1400px) {
+  .navbar {
+    padding: 15px 7%;
+  }
+}
+
+/* Até 800px */
+@media (max-width: 800px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    display: none; /* Esconde por padrão */
+    transition: all 0.3s ease; /* opcional */
+  }
+
+  .nav-list.active {
+    display: flex; /* Mostra quando ativado */
+  }
+}
+
+/* Até 600px */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .nav-item a {
+    font-size: 1rem;
+  }
+
+  .nav-item button {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+
+  .solido-texts h4 {
+    margin-top: 0px;
+  }
+}
+
+/* iPhone XR (até 400px) */
+@media (max-width: 400px) {
+  .navbar {
+    padding: 10px 4%;
+  }
+
+  .nav-logo {
+    width: 15vh;
+  }
+
+  .nav-item a {
+    font-size: 0.95rem;
+  }
+
+  .menu-toggle {
+    font-size: 1.8rem;
+  }
+}

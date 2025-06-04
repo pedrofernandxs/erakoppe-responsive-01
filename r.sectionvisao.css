@@ -1,0 +1,120 @@
+/* Telas grandes (notebooks full HD e desktops grandes) */
+@media (max-width: 1400px) {
+  .textos {
+    padding: 0 5%;
+  }
+
+  .textos h2 {
+    font-size: 5.5rem;
+  }
+
+  .blocos {
+    gap: 50px;
+  }
+
+  .blocos img {
+    max-width: 300px;
+  }
+}
+
+/* Telas médias (notebooks e tablets em paisagem) */
+@media (max-width: 1200px) {
+  .textos h2 {
+    font-size: 4.8rem;
+  }
+
+  .blocos {
+    gap: 40px;
+  }
+
+  .blocos img {
+    max-width: 275px;
+  }
+}
+
+/* Tablets e notebooks pequenos */
+@media (max-width: 992px) {
+  .textos h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .textos p {
+    font-size: 1.25rem;
+    padding: 0 1.5rem;
+  }
+
+  .blocos {
+    gap: 30px;
+  }
+
+  .blocos img {
+    max-width: 250px;
+  }
+}
+
+/* Tablets em retrato e celulares grandes */
+@media (max-width: 768px) {
+  .textos h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .textos p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .blocos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .blocos img {
+    width: 45%;
+    max-width: 100%;
+  }
+}
+
+/* Celulares médios */
+@media (max-width: 600px) {
+  .textos h2 {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  .textos p {
+    font-size: 1.1rem;
+  }
+
+  .blocos {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .blocos img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+/* Celulares pequenos (ex: iPhone SE, Androids compactos) */
+@media (max-width: 400px) {
+  .textos h2 {
+    font-size: 2.2rem;
+  }
+
+  .textos p {
+    font-size: 1rem;
+  }
+
+  .blocos img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
