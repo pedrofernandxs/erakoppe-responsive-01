@@ -3,40 +3,31 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="stylesheet.css" />
-        <link
-            rel="shortcut icon"
-            href="imgs/ERA KOPPE.jpg"
-            type="image/x-icon"
-        />
+        <title>ERAKOPPE</title>
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="r.nabar.css" />
-        <link rel="stylesheet" href="r.sectionhome.css" />
-        <link rel="stylesheet" href="r.sectionvisao.css" />
-        <link rel="stylesheet" href="mobile.css">
         <link
             rel="stylesheet"
             href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
         />
-
-        <title>ERAKOPPE</title>
     </head>
 
     <body>
-        <!-- NAVBAR -->
         <header id="header">
             <nav class="navbar">
-                <a href="#home"
-                    ><img src="imgs/erakoppeblack.png" class="nav-logo"
-                /></a>
+                <a href="#home" class="erakoppe">ERAKOPPE</a>
+                <!-- ✅ correto -->
 
                 <!-- BOTÃO TOGGLE -->
-                <div class="menu-toggle" id="menu-toggle">
-                    &#9776;
-                    <!-- Unicode for hamburger icon -->
+                <div class="nav-controls">
+                    <div class="menu-toggle" id="menu-toggle">
+                        <i class="uil uil-align-center-alt"></i>
+                        <!-- Unicode for hamburger icon -->
+                    </div>
+                    <!-- MODO ESCURO -->
+                    <div class="dark-mode-toggle" id="dark-mode-toggle">
+                        <i class="uil uil-moon"></i>
+                    </div>
                 </div>
-                <!-- MODO ESCURO -->
-
                 <!-- MENU -->
                 <ul class="nav-list" id="nav-list">
                     <li class="nav-item">
@@ -61,58 +52,81 @@
             </nav>
         </header>
 
-        <!--SECTION HOME -->
         <section class="container-inicio reveal" id="home">
-            <div class="texto-img">
-                <div class="solido">
-                    <div class="solido-texts">
-                        <h1>EraKoPPe</h1>
-                        <h4>A loja que veste a quebrada!</h4>
-                        <a
-                            href="https://www.instagram.com/_erakoppe/"
-                            target="_blank"
-                        >
-                            <button>Cola com Nóiz!</button>
-                        </a>
+            <h1>A loja que veste a quebrada!</h1>
+            <h1>Original & Marginal ©</h1>
+            <div class="conteudo-principal">
+                <div class="carrossel-wrapper">
+                    <button class="nav-btn voltar">◀</button>
+                    <div class="carrossel">
+                        <div class="carrossel-inner" id="carrossel-inner">
+                            <img
+                                src="imgs/banner-principal.jpg"
+                                alt="Imagem 1"
+                                class="carrossel-img"
+                            />
+                            <img
+                                src="imgs/erick.jpg"
+                                alt="Imagem 2"
+                                class="carrossel-img"
+                            />
+                            <img
+                                src="imgs/erick2.jpg"
+                                alt="Imagem 3"
+                                class="carrossel-img"
+                            />
+                        </div>
                     </div>
-
-                    <img src="imgs/capa.png" alt="" class="solido-capa" />
+                    <button class="nav-btn proxima">▶</button>
+                </div>
+                <div class="redes">
+                    <a
+                        href="https://www.instagram.com/_erakoppe/"
+                        target="_blank"
+                        class="btn"
+                    >
+                        <i class="uil uil-instagram"></i> Instagram
+                    </a>
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5561985823901&text&type=phone_number&app_absent=0"
+                        target="_blank"
+                        class="btn"
+                    >
+                        <i class="uil uil-whatsapp"></i> WhatsApp
+                    </a>
+                    <a
+                        href="https://maps.apple.com/place?address=Estacionamento%20do%20Ocidental%20Shopping,%20Parque%20Nova%20Friburgo%20B,%20Cidade%20Ocidental%20-%20GO,%2072880-492,%20Brasil&coordinate=-16.109123,-47.937548&name=Ocidental%20Shopping&place-id=I1E418686764D2EC0&map=explore"
+                        target="_blank"
+                        class="btn"
+                    >
+                        <i class="uil uil-map-marker"></i> Localização
+                    </a>
                 </div>
             </div>
         </section>
 
         <section class="sobre-container reveal" id="somos">
-            <div class="textos reveal">
-                <h2>PeGa a Visão!</h2>
-                <span class="visao-span">Conheça a nossa caminhada!</span>
-                <p class="texto-maior">
-                    Mais que uma loja, somos a expressão de uma cultura.
-                    Vestimos a quebrada com atitude, estilo e identidade. Cada
-                    peça reflete as ruas, a criatividade das periferias e o
-                    orgulho de transformar resistência em tendência. Oferecemos
-                    moda masculina streetwear com
-                        <b class="">
-                            autenticidade, conforto e originalidade
-                        </b>
-                    pra quem entende a caminhada. Acreditamos na força da
-                    representatividade e no poder de se vestir bem sem abrir mão
-                    de quem você é. Seja bem-vindo à nossa quebrada. Vem com
-                    nóiz vestir atitude!
-                </p>
-            </div>
-            <div class="blocos revealdois">
+            <h1>Pega a Visão!</h1>
+            <h2>Conheça a nossa caminhada!</h2>
+            <p class="texto-maior">
+                Mais que uma loja, somos a expressão de uma cultura. Vestimos a
+                quebrada com atitude, estilo e identidade. Cada peça reflete as
+                ruas, a criatividade das periferias e o orgulho de transformar
+                resistência em tendência. -- Oferecemos moda masculina
+                streetwear com
+                <b class="negrito"> autenticidade, conforto e originalidade </b>
+                pra quem entende a caminhada.
+            </p>
+            <div class="fotos-koppe revealdois">
                 <img src="imgs/visao1.png" class="img-bloco" />
                 <img src="imgs/visao2.png" class="img-bloco2" />
                 <img src="imgs/visao3.png" class="img-bloco" />
             </div>
         </section>
 
-        <!--
--->
-
         <section class="produtos-container reveal" id="produtos">
             <h1>Carro Chefe!</h1>
-            <span>Conheça nossos produtos mais vendidos</span>
+            <h2>Conheça nossos produtos mais vendidos</h2>
             <div class="produtos-imgs">
                 <div class="produto reveal3">
                     <img src="imgs/prod2.png" alt="" />
@@ -146,7 +160,7 @@
 
         <section class="container-parceiros reveal3" id="parceiros">
             <h1>Parceiros Street!</h1>
-            <span>Conheça nossos parceiros de moda Streetwear</span>
+            <h2>Conheça nossos parceiros de moda Streetwear</h2>
             <div class="logos-wrapper">
                 <div class="logos logos1">
                     <img src="logos/4ciuty.png" alt="" />
@@ -186,9 +200,9 @@
             </div>
         </section>
 
-        <section class="container-parceiros reveal3">
+        <section class="container-local reveal3">
             <h1>Cola na Fonte!</h1>
-            <span>Saiba onde ficamos localizados</span>
+            <h2>Saiba onde ficamos localizados</h2>
             <div class="local">
                 <img src="imgs/celular.png" alt="" />
                 <div class="local-textos">
@@ -214,27 +228,24 @@
                             "
                         />
                     </p>
-                    <p>Acompanhe as nossas redes sociais:</p>
-                    <div class="local-botoes">
-                        <a
-                            href="https://www.instagram.com/_erakoppe/"
-                            target="_blank"
-                        >
-                            <button>
-                                <i class="uil uil-instagram"></i>
-                                Instagram
-                            </button>
-                        </a>
-
-                        <a
-                            href="https://api.whatsapp.com/send?phone=5561985823901&fbclid=PAZXh0bgNhZW0CMTEAAaevb4E7QWux81Pl50RyyMB321467tospyPkjEbgS8DjsGRbubDUixbPfrA1Fg_aem_7OOCIpG_7vrYqp0jHppQrQ"
-                            target="_blank"
-                        >
-                            <button>
-                                <i class="uil uil-whatsapp"></i>
-                                WhatsApp
-                            </button>
-                        </a>
+                    <div class="redes-sociais-margin-top">
+                        <p>Acompanhe as nossas redes sociais:</p>
+                        <div class="local-botoes">
+                            <a
+                                href="https://www.instagram.com/_erakoppe/"
+                                target="_blank"
+                                class="btn"
+                            >
+                                <i class="uil uil-instagram"></i> Instagram
+                            </a>
+                            <a
+                                href="https://www.instagram.com/_erakoppe/"
+                                target="_blank"
+                                class="btn"
+                            >
+                                <i class="uil uil-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,33 +255,39 @@
             <div class="footer-top">
                 <div class="footer-section">
                     <h2 class="logo">ERAKOPPE</h2>
-                    <p>A loja 00 da quebrada!</p>
+                    <p>Streetwear de quebrada!</p>
                 </div>
 
                 <div class="footer-section">
                     <h4>Links rápidos</h4>
                     <a href="#home">Início</a>
-                    <a href="https://www.instagram.com/_erakoppe/" target="_blank">Contato</a>
+                    <a
+                        href="https://www.instagram.com/_erakoppe/"
+                        target="_blank"
+                        >Contato</a
+                    >
                 </div>
 
                 <div class="footer-section">
                     <h4>Mapa do site</h4>
                     <a href="#somos">Quem Somos</a>
                     <a href="#produtos">Produtos</a>
+                    <a href="#parceiros">Parceiros</a>
                 </div>
 
                 <div class="footer-section">
                     <h4>Nossas redes</h4>
-                    <a href="https://api.whatsapp.com/send?phone=5561985823901&fbclid=PAZXh0bgNhZW0CMTEAAaevb4E7QWux81Pl50RyyMB321467tospyPkjEbgS8DjsGRbubDUixbPfrA1Fg_aem_7OOCIpG_7vrYqp0jHppQrQ" target="_blank">Whatsapp</a>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5561985823901&fbclid=PAZXh0bgNhZW0CMTEAAaevb4E7QWux81Pl50RyyMB321467tospyPkjEbgS8DjsGRbubDUixbPfrA1Fg_aem_7OOCIpG_7vrYqp0jHppQrQ"
+                        target="_blank"
+                        >Whatsapp</a
+                    >
                     <a href="https://www.instagram.com/_erakoppe/">Instagram</a>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>
-                    Todos os diretos reservados a Era Koppe 2025 © Desenvolvido
-                    por Pedro Fernandes.
-                </p>
+                <p>Desenvolvido por © Pedro Fernandes.</p>
             </div>
         </footer>
 
