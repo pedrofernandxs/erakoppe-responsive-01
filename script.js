@@ -1,8 +1,9 @@
   const navbar = document.querySelector('nav');
+  const toggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
 
-  // Exibe a navbar no carregamento
-  window.addEventListener('DOMContentLoaded', () => {
-    navbar.classList.add('visible');
+  toggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
   });
 
   // Encolhe a navbar ao rolar
@@ -38,3 +39,48 @@ ScrollReveal().reveal('.reveal3', {
   origin: 'left',
   distance: '100px'
 });
+
+
+const darkToggle = document.getElementById('dark-mode-toggle');
+const darkIcon = darkToggle.querySelector('i');
+
+// Ativa o tema escuro se estava salvo
+if (localStorage.getItem('dark-mode') === 'enabled') {
+  document.body.classList.add('dark-mode');
+  darkIcon.classList.remove('uil-moon');
+  darkIcon.classList.add('uil-sun');
+}
+
+darkToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  const enabled = document.body.classList.contains('dark-mode');
+  localStorage.setItem('dark-mode', enabled ? 'enabled' : 'disabled');
+
+  darkIcon.classList.toggle('uil-sun', enabled);
+  darkIcon.classList.toggle('uil-moon', !enabled);
+});
+
+// carrosel
+ const inner = document.getElementById('carrossel-inner');
+    const imagens = document.querySelectorAll('.carrossel-img');
+    const btnProxima = document.querySelector('.proxima');
+    const btnVoltar = document.querySelector('.voltar');
+    let indexAtual = 0;
+
+    function atualizarCarrossel() {
+        const largura = imagens[0].clientWidth;
+        inner.style.transform = `translateX(-${indexAtual * largura}px)`;
+    }
+
+    btnProxima.addEventListener('click', () => {
+        indexAtual = (indexAtual + 1) % imagens.length;
+        atualizarCarrossel();
+    });
+
+    btnVoltar.addEventListener('click', () => {
+        indexAtual = (indexAtual - 1 + imagens.length) % imagens.length;
+        atualizarCarrossel();
+    });
+
+    // Atualiza se o tamanho da tela mudar (responsivo)
+    window.addEventListener('resize', atualizarCarrossel);
